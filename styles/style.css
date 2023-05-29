@@ -1,0 +1,240 @@
+:root {
+    --hover-links: #FFB932;
+    --download-cv: rgba(255, 185, 50, .78);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai';
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0 .5em 1em grey;
+}
+
+#header::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: url('../img/fondo-header.jpg') no-repeat;
+    background-size: cover;
+    filter: brightness(50%);
+}
+
+.nav-bar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 2;
+    flex-shrink: 1;
+    /* background: red; */
+    position: relative;
+    color: white;
+}
+
+.items ul li {
+    list-style: none;
+    display: inline;
+    font-size: 1.5em;
+    padding: 2em 2em 1em 2em;
+    border-bottom: solid 2px transparent;
+    transition: all ease-in 400ms;
+}
+
+.items ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all ease-in 400ms;
+}
+
+.items ul li a:hover {
+    color: var(--hover-links);
+}
+
+.items ul li:hover{
+    border-bottom: solid 2px white;
+}
+
+/* .items {
+    background: rebeccapurple;
+} */
+
+
+.logo-nav {
+    max-width: 100%;
+}
+
+.main-logo {
+    margin-top: 3.5em;
+    width: 4.5%;
+}
+
+.logo-title {
+    text-align: center;
+    /* margin: 10% 55% 0 0; */
+}
+
+.logo-title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo-title span {
+    color: var(--hover-links);
+}
+
+.download-cv {
+    width: 125%;
+    background: var(--download-cv);
+    padding: .65em;
+    border-radius: 1.5em;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+
+
+/* SOBRE MI */
+
+.about-me {
+    width: 80%;
+    height: auto;
+    margin-top: 11%;
+    margin-left: 11%;
+    /* background: red; */
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.description {
+    width: 80%;
+    background: transparent;
+    border: solid 2px rgba(255, 185, 50, .2);
+    border-radius: 20px;
+    margin-right: 5%;
+    padding: 1em;
+    color: #fff;
+    backdrop-filter: blur(10px);
+}
+
+.photo {
+    width: 20%;
+}
+
+.photo img{
+    border-radius: 100%;
+    width: 110%;
+    filter: brightness(70%);
+}
+
+.bar-div {
+    border-color: var(--hover-links);
+}
+
+.text-description {
+    font-size: 1.5em;
+    text-align: justify;
+    padding-top: 1.5em;
+}
+
+main {
+    margin-top: 60px;
+}
+
+.title-section {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 2em;
+}
+
+.cards-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.card {
+    width: 25em;
+    height: 25em;
+    border-radius: 65px;
+    box-shadow: 0 0 10px rgb(120, 116, 116);
+    /* background-color: #FFB932; */
+    transition: all ease-out 300ms;
+}
+
+.card .img-cards {
+    width: 50%;
+    padding: 5% 25%;
+}
+
+.card .caption-cards {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5%;
+    cursor: default;
+}
+
+.card:hover  {
+    /* background: #FFB932; */
+    transition: all ease-in 300ms;
+}
+
+.card figure {
+    transition: all ease-in 300ms;
+}
+
+.card figure p {
+    color: transparent;
+    padding: .5em 2em;
+    transition: all ease-in 300ms;
+}
+
+.card:hover figure{
+    transform: translateY(-120px);
+    transition: all ease-in 300ms;
+}
+
+.card-description {
+    text-align: justify;
+}
+
+.card:hover p {
+    color: #898989;
+    transition: all ease-in 300ms;
+}
+
+.tools-section .tools {
+    margin-top: -1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+    justify-items: center;
+    margin-bottom: 5em;
+    /* align-content: center; */
+}
+
+.tool-icon {
+    width: 25%;
+}
+
+.last-item {
+    width: 50%;
+    grid-column: 2;
+}
