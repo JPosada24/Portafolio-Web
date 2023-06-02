@@ -176,11 +176,13 @@ main {
     box-shadow: 0 0 10px rgb(120, 116, 116);
     /* background-color: #FFB932; */
     transition: all ease-out 300ms;
+    overflow: hidden;
 }
 
 .card .img-cards {
     width: 50%;
     padding: 5% 25%;
+    transition: all ease-out 300ms;
 }
 
 .card .caption-cards {
@@ -188,6 +190,7 @@ main {
     text-align: center;
     text-transform: uppercase;
     margin-top: 5%;
+    margin-bottom: 2%;
     cursor: default;
 }
 
@@ -207,12 +210,21 @@ main {
 }
 
 .card:hover figure{
-    transform: translateY(-120px);
+    transform: translateY(-10px);
     transition: all ease-in 300ms;
+}
+
+.card:hover .img-cards{
+    width: 25%;
+    margin-bottom: -20px;
+    margin-left: 12.5%;
+    margin-top: .5%;
+    transition: all ease-out 300ms;
 }
 
 .card-description {
     text-align: justify;
+    cursor: default;
 }
 
 .card:hover p {
@@ -226,8 +238,6 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 3em;
     justify-items: center;
-    margin-bottom: 5em;
-    /* align-content: center; */
 }
 
 .tool-icon {
@@ -237,4 +247,43 @@ main {
 .last-item {
     width: 50%;
     grid-column: 2;
+}
+
+.footer {
+    position: relative;
+    /* padding-top: 100px; */
+    margin-top: 20em;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40em;
+    background: url('../img/wave.svg') no-repeat;
+    background-size: cover;
+}
+
+.content {
+    /* Estilos para el contenido del footer */
+    /* Por ejemplo: */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 20px;
+    color: red; /* Color del texto del footer */
+    position: relative;
+}
+
+.section-footer {
+    width: 20%;
+    height: 250px;
+    background: red;
+    border: solid 2px black;
+}
+
+.section-footer:nth-child(2) {
+    background: #FFB932;
+    height: 350px;
 }
