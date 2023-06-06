@@ -317,9 +317,11 @@ main {
 
 .title-contact {
     font-size: 2.5em;
-    margin-top: 10%;
-    margin-bottom: 10%;
     text-transform: uppercase;
+    border-bottom: solid 5px #FFB932;
+    width:max-content;
+    margin: 1.5em auto 2em;
+    padding: 0.25em 1em 0.5em;
 }
 
 .contact-me p {
@@ -336,4 +338,12 @@ main {
     color: #000;
     text-transform: uppercase;
     text-decoration: none;
+    transition: all ease-out 500ms;
+}
+
+.contact-button:hover {
+    /* background: #8ab6b8; */
+    box-shadow: var(--hover-links) 0 0 25px;
+    font-size: 1.03em;
+    transition: all ease-in 500ms;
 }
