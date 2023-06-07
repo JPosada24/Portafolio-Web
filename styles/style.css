@@ -15,6 +15,7 @@ body::-webkit-scrollbar {
     margin: 0;
     padding: 0;
     font-family: 'Baloo Bhai';
+    scroll-behavior: smooth;
 }
 
 #header {
@@ -295,14 +296,11 @@ main {
 
 .contact-section {
     display: flex;
-    justify-content: space-around;
-    /* gap: 20px; */
+    justify-content: space-between;
     width: 100%;
     height: 500px;
-    background: #D9D9D9;
+    /* background: #D9D9D9; */
     margin-top: 7em;
-    /* border-radius: 100px 100px 0 0; */
-    overflow: hidden;
 }
 
 .contact-section div {
@@ -311,10 +309,6 @@ main {
     text-align: center;
 }
 
-/* .contact-me:nth-child(1) {
-    background: red;
-} */
-
 .title-contact {
     font-size: 2.5em;
     text-transform: uppercase;
@@ -322,6 +316,11 @@ main {
     width:max-content;
     margin: 1.5em auto 2em;
     padding: 0.25em 1em 0.5em;
+}
+
+.contact-me {
+    /* overflow-y: scroll; */
+    scroll-behavior: smooth;
 }
 
 .contact-me p {
@@ -346,4 +345,21 @@ main {
     box-shadow: var(--hover-links) 0 0 25px;
     font-size: 1.03em;
     transition: all ease-in 500ms;
+}
+
+.img-contact-me {
+    width: 65%;
+    padding-left: 15em;
+    margin-top: -5em;
+    animation: move-up 3s infinite alternate ease-in-out;
+}
+
+@keyframes move-up {
+    0% {
+        padding-top: 0;
+    }
+
+    100% {
+        padding-top: 5%;
+    }
 }
