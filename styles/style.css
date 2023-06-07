@@ -185,8 +185,8 @@ main {
 }
 
 .card .img-cards {
-    width: 50%;
-    padding: 5% 25%;
+    width: 60%;
+    padding: 5% 20%;
     transition: all ease-out 300ms;
 }
 
@@ -194,7 +194,6 @@ main {
     font-size: 2em;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 5%;
     margin-bottom: 2%;
     cursor: default;
 }
@@ -222,7 +221,7 @@ main {
 .card:hover .img-cards {
     width: 25%;
     margin-bottom: -20px;
-    margin-left: 12.5%;
+    margin-left: 20%;
     margin-top: .5%;
     transition: all ease-out 300ms;
 }
@@ -277,9 +276,10 @@ main {
     justify-content: space-around;
     align-items: flex-end;
     padding: 20px;
-    color: red;
+    /* color: red; */
     /* Color del texto del footer */
     position: relative;
+    text-align: center;
 }
 
 .section-footer {
@@ -292,6 +292,11 @@ main {
 .section-footer:nth-child(2) {
     background: #FFB932;
     height: 350px;
+}
+
+.section-footer ul li {
+    text-decoration: none;
+    list-style: none;
 }
 
 .contact-section {
