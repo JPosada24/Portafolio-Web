@@ -194,6 +194,7 @@ main {
     font-size: 2em;
     text-align: center;
     text-transform: uppercase;
+    /* margin-top: 5%; */
     margin-bottom: 2%;
     cursor: default;
 }
@@ -251,52 +252,6 @@ main {
 .last-item {
     width: 50%;
     grid-column: 2;
-}
-
-.footer {
-    position: relative;
-    /* padding-top: 100px; */
-    margin-top: 20em;
-}
-
-.wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40em;
-    background: url('../img/wave.svg') no-repeat;
-    background-size: cover;
-}
-
-.content {
-    /* Estilos para el contenido del footer */
-    /* Por ejemplo: */
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    padding: 20px;
-    /* color: red; */
-    /* Color del texto del footer */
-    position: relative;
-    text-align: center;
-}
-
-.section-footer {
-    width: 20%;
-    height: 250px;
-    background: red;
-    border: solid 2px black;
-}
-
-.section-footer:nth-child(2) {
-    background: #FFB932;
-    height: 350px;
-}
-
-.section-footer ul li {
-    text-decoration: none;
-    list-style: none;
 }
 
 .contact-section {
@@ -367,4 +322,64 @@ main {
     100% {
         padding-top: 5%;
     }
+}
+
+.logo-footer {
+    width: 25%;
+}
+
+.logo-dev-footer {
+    font-size: 2.5em;
+    color: #fff;
+    line-height: .75em;
+    cursor: default;
+}
+
+.logo-dev-footer .dev {
+    color: #FFB932;
+}
+
+.footer {
+    position: relative;
+    /* padding-top: 100px; */
+    margin-top: 12em;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40em;
+    background: url('../img/wave.svg') no-repeat;
+    background-size: cover;
+}
+
+.content {
+    /* Estilos para el contenido del footer */
+    /* Por ejemplo: */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 20px;
+    /* color: red; */
+    /* Color del texto del footer */
+    position: relative;
+    text-align: center;
+}
+
+.section-footer {
+    width: 20%;
+    height: 300px;
+    /* background: red; */
+    /* border: solid 2px black; */
+}
+
+.section-footer:nth-child(1) img {
+    width: 60%;
+}
+
+.section-footer:nth-child(2) {
+    background: #FFB932;
+    height: 350px;
 }
