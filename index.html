@@ -12,9 +12,26 @@
         <title>JP DEV</title>
     </head>
 
-    <body>
+    <body id="body">
 
-        <header id="header">
+        <header id="header" class="header">
+            <div class="div-toggle-button">
+                <label class="toggle-button-theme">
+                    <input id="toggle-checkbox" class="toggle-checkbox"
+                        type="checkbox">
+                    <div class="toggle-slot">
+                        <div class="sun-icon-wrapper">
+                            <div class="iconify sun-icon"
+                                data-icon="feather-sun" data-inline="false"></div>
+                        </div>
+                        <div class="toggle-button"></div>
+                        <div class="moon-icon-wrapper">
+                            <div class="iconify moon-icon"
+                                data-icon="feather-moon" data-inline="false"></div>
+                        </div>
+                    </div>
+                </label>
+            </div>
             <nav class="nav-bar">
                 <div class="items main-logo">
                     <a href="/"><img src="img/Logo-Dev.svg" class="logo-nav"
@@ -142,21 +159,40 @@
         </main>
 
         <footer class="footer">
-            <div class="wave">
-            </div>
-            <div class="content">
-                <div class="section-footer">
-                    <img src="img/Logo-Dev.svg" alt="Logo-Web"
-                        class="logo-footer"><br>JP<span class="dev"> DEV</span>
-                    <!-- <a href=""><li>Inicio</li></a>
-                        <a href=""><li>Sobre Mi</li></a>
-                        <a href=""><li>Habilidades</li></a> -->
+            <div class="section-footer">
+                <ul>
+                    <li><a href="#header"><img src="img/Logo-Dev-light.svg"
+                                class="logo-nav-footer"
+                                alt="Logo JPDEV"></a>
+                        <h3 class="logo-title"><a href="/">JP <span>DEV</span></a></h3>
+                    </li>
+                    <li><strong>Telefono: </strong> (+57) 313 592 1062</li>
+                    <li><strong>Correo: </strong> julian_2120@hotmail.com</li>
+                </ul>
+                <div class="social-media">
+                    <div>
+                        <a href><ion-icon name="logo-linkedin" class="icon"></ion-icon></a>
+                        <a href><ion-icon name="logo-facebook" class="icon"></ion-icon></a>
+                        <a href><ion-icon name="logo-instagram" class="icon"></ion-icon></a>
+                        <a href><ion-icon name="logo-github" class="icon"></ion-icon></a>
+                    </div>
                 </div>
-                <div class="section-footer"></div>
-                <div class="section-footer"></div>
             </div>
-            <!-- <a href="https://storyset.com/work">Work illustrations by Storyset</a> -->
+            <div class="section-footer"></div>
+            <div class="section-footer"></div>
+
+            <div class="division-legal-info"></div>
+            <div class="legal-info">
+                <p class="legal-text">Copyright &copy; <span id="current_date"></span>
+                    Todos los derechos reservados</p>
+            </div>
         </footer>
+
+        <script src="js/main.js"></script>
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     </body>
 
