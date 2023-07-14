@@ -4,6 +4,10 @@
     --grey-page: #263238;
 }
 
+*::selection {
+    color: var(--hover-links);
+}
+
 h1, h2, h3, h4, h5, h6 {
     cursor: default;
 }
@@ -133,6 +137,9 @@ body::-webkit-scrollbar {
     height: 98.5vh;
     box-shadow: 0 .5em 1em grey;
     transition: all ease-in 300ms;
+    display: flex;
+    flex-direction: column;
+    background: #263238;
 }
 
 .header::before {
@@ -144,7 +151,7 @@ body::-webkit-scrollbar {
     position: absolute;
     background: url('../img/fondo-header-light.jpg') no-repeat;
     background-size: cover;
-    filter: brightness(80%);
+    filter: brightness(90%);
     transition: all ease-in 300ms;
 }
 
@@ -157,18 +164,18 @@ body::-webkit-scrollbar {
     position: absolute;
     background: url('../img/fondo-header.jpg') no-repeat;
     background-size: cover;
-    filter: brightness(50%);
+    filter: brightness(60%);
     transition: all ease-in 300ms;
 }
 
 .nav-bar {
     width: 100%;
-    height: 100px;
+    height: 10em;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-grow: 2;
-    flex-shrink: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
     /* background: red; */
     position: relative;
 }
@@ -188,12 +195,12 @@ body::-webkit-scrollbar {
     transition: all ease-in 400ms;
 }
 
-.items ul li a:hover {
+/* .items ul li a:hover {
     color: var(--hover-links);
-}
+} */
 
 .items ul li:hover {
-    border-bottom: solid 2px white;
+    border-bottom: solid 2px var(--hover-links);
 }
 
 /* .items {
@@ -216,7 +223,7 @@ body::-webkit-scrollbar {
 }
 
 .logo-title a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
@@ -230,9 +237,13 @@ body::-webkit-scrollbar {
     padding: .65em;
     border-radius: 1.5em;
     border: none;
-    color: white;
+    color: #fff;
     font-size: 1.2em;
-    cursor: pointer;
+    cursor: pointer;transition: all ease-in 300ms;
+}
+
+.download-cv:hover {
+    background: var(--hover-links);
 }
 
 
@@ -240,11 +251,10 @@ body::-webkit-scrollbar {
 /* SOBRE MI */
 
 .about-me {
-    width: 80%;
+    width: 100%;
     height: auto;
-    margin-top: 11%;
-    margin-left: 11%;
-    /* background: red; */
+    margin-top: 15rem;
+    /* background:#ffbb52; */
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -252,34 +262,38 @@ body::-webkit-scrollbar {
 }
 
 .description {
-    width: 80%;
-    background: transparent;
-    border: solid 2px rgba(255, 185, 50, .2);
+    width: 60%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.3);
+    border: solid 2px rgba(255, 170, 0, .7);
     border-radius: 20px;
-    margin-right: 5%;
     padding: 1em;
-    color: #fff;
+    color: #000;
     backdrop-filter: blur(10px);
 }
 
 .photo {
     width: 20%;
+    align-self: center;
 }
 
 .photo img {
     border-radius: 100%;
-    width: 110%;
+    width: 70%;
     filter: brightness(70%);
 }
 
 .bar-div {
-    border-color: var(--hover-links);
+    background: var(--hover-links);
+    margin-top: 1em;
+    height: 2px;
+    border: none;
 }
 
 .text-description {
     font-size: 1.5em;
     text-align: justify;
-    padding-top: 1.5em;
+    padding-top: 1em;
 }
 
 main {
@@ -463,12 +477,17 @@ main {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+.logo-title-footer a {
+    color: #fff;
+}
+
 .section-footer {
-    width: 25%;
+    width: 20%;
     height: 80%;
     /* background: #ffbb52; */
     text-align: center;
     color: #fff ;
+    margin-left: -12em;
 }
 
 .section-footer ul li {
@@ -510,4 +529,40 @@ main {
     padding: .2em;
     border-radius: .8em;
     color: var(--grey-page);
+}
+
+.footer-menu h2 {
+    font-weight: 400;
+    margin-top: 1em;
+    margin-bottom: .6em;
+    text-transform: capitalize;
+}
+
+.info-footer {
+    width: auto;
+    /* background: red; */
+}
+
+.info-footer li, a {
+    text-align: justify;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.info-footer a {
+    margin-left: .5em;
+    border-bottom: solid 2px transparent;
+    transition: all ease-in 200ms;
+}
+
+.info-footer a:hover {
+    border-bottom: #ffbb52 solid 2px;
+}
+
+.arrow-link {
+    color: var(--hover-links);
+    margin-left: .3em;
+    margin-top: .4em;
+    transform: translateY(3px);
 }
